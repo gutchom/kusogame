@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <title>モグラ叩き</title>
+  <script type="text/javascript" src="https://kit.fontawesome.com/e26bc99bde.js" crossorigin="anonymous"></script>
+  <style>
+    html,
+    body {
+      font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+      height: 100%;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      letter-spacing: 0.075em;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+    }
+
+    button {
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 0;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      display: none;
+    }
+
+    @keyframes choochootrain {
+      0% {
+        transform: skew(0deg) scale(1) translate(0);
+      }
+      25% {
+        transform: skew(120deg) scale(0.5) translate(125%, 0);
+      }
+      75% {
+        transform: skew(0deg) scale(1) translate(0);
+      }
+      100% {
+        transform: skew(40deg) scale(1.5) translate(-125%, 0);
+      }
+    }
+
+    .mogura ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .mogura li {
+      animation-duration: 750ms;
+      animation-iteration-count: infinite;
+      animation-name: choochootrain;
+      flex: 1 1 auto;
+      margin: 12px auto;
+    }
+    .mogura ul.finished li {
+      animation-iteration-count: 0;
+    }
+    .mogura li:nth-child(1) {
+      animation-delay: 0ms;
+    }
+    .mogura li:nth-child(2) {
+      animation-delay: 300ms;
+    }
+    .mogura li:nth-child(3) {
+      animation-delay: 600ms;
+    }
+    .mogura li:nth-child(4) {
+      animation-delay: 900ms;
+    }
+    .mogura li:nth-child(5) {
+      animation-delay: 1200ms;
+    }
+    .mogura li:nth-child(10) {
+      animation-delay: 0ms;
+    }
+    .mogura li:nth-child(9) {
+      animation-delay: 300ms;
+    }
+    .mogura li:nth-child(8) {
+      animation-delay: 600ms;
+    }
+    .mogura li:nth-child(7) {
+      animation-delay: 900ms;
+    }
+    .mogura li:nth-child(6) {
+      animation-delay: 1200ms;
+    }
+    .mogura li:nth-child(11) {
+      animation-delay: 0ms;
+    }
+    .mogura li:nth-child(12) {
+      animation-delay: 300ms;
+    }
+    .mogura li:nth-child(13) {
+      animation-delay: 600ms;
+    }
+    .mogura li:nth-child(14) {
+      animation-delay: 900ms;
+    }
+    .mogura li:nth-child(15) {
+      animation-delay: 1200ms;
+    }
+    .mogura li:nth-child(20) {
+      animation-delay: 0ms;
+    }
+    .mogura li:nth-child(19) {
+      animation-delay: 300ms;
+    }
+    .mogura li:nth-child(18) {
+      animation-delay: 600ms;
+    }
+    .mogura li:nth-child(17) {
+      animation-delay: 900ms;
+    }
+    .mogura li:nth-child(16) {
+      animation-delay: 1200ms;
+    }
+    .mogura li span {
+      background: #000;
+      border-radius: 50%;
+      color: #fff;
+      display: block;
+      font-size: 0;
+      height: 64px;
+      position: relative;
+      text-align: center;
+      width: 64px;
+    }
+    .mogura li span i {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    .mogura li span::after {
+      background: #888;
+      border-radius: 5px;
+      content: '';
+      display: block;
+      height: 10px;
+      margin: auto;
+      width: 32px;
+    }
+    .mogura li input:checked ~ span::after {
+      background: #4f8;
+    }
+
+    .mogura li input:checked:disabled ~ span::after {
+      background: #f44;
+    }
+  </style>
+</head>
+<body>
+  <h1>クソモグラ叩き</h1>
+  <section class="mogura">
+    <ul id="mogura">
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"/>
+          <span><i class="fas fa-dizzy"></i></span>
+        </label>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h2>残り時間<span id="counter"></span></h2>
+    <h2>得点<span id="score"></span>/100</h2>
+  </section>
+  <h2>
+    <a
+      href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+      class="twitter-share-button"
+      data-show-count="true"
+      data-size="large"
+      data-hashtags="クソゲー,モグラ叩き"
+      data-url=""
+    >Tweet</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </h2>
+<script>
+  ;(function(){
+    const $counter = document.getElementById('counter');
+    const $mogura = document.getElementById('mogura');
+
+    function calcTotalPoint() {
+      const score = [...$mogura.getElementsByTagName('input')].reduce((total, $input) => {
+        return total + ($input.checked ? 5 : 0);
+      }, 0);
+      document.getElementById('score').textContent = score.toString();
+    }
+
+    (function timer(limit) {
+      if (limit > 0) {
+        $counter.textContent = limit.toFixed().toString();
+        limit -= 0.1;
+        calcTotalPoint();
+        setTimeout(timer, 0.1, limit);
+      } else {
+        $mogura.classList.add('finished');
+        [...$mogura.getElementsByTagName('input')].forEach($input => $input.disabled = true);
+      }
+    })(600);
+  })();
+</script>
+</body>
+</html>
